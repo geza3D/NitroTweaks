@@ -1,4 +1,4 @@
-package me.geza3d.compasstweaks.commands;
+package me.geza3d.nitrotweaks.commands;
 
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;

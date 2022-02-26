@@ -1,4 +1,4 @@
-package me.geza3d.compasstweaks.config;
+package me.geza3d.nitrotweaks.config;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -10,8 +10,9 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import com.google.gson.Gson;
-import me.geza3d.compasstweaks.NitroTweaks;
-import me.geza3d.compasstweaks.Tweak;
+
+import me.geza3d.nitrotweaks.NitroTweaks;
+import me.geza3d.nitrotweaks.Tweak;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;

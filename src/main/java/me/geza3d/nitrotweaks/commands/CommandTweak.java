@@ -1,10 +1,11 @@
-package me.geza3d.compasstweaks.commands;
+package me.geza3d.nitrotweaks.commands;
 
-import me.geza3d.compasstweaks.NitroTweaks;
-import me.geza3d.compasstweaks.Tweak;
+import me.geza3d.nitrotweaks.NitroTweaks;
+import me.geza3d.nitrotweaks.Tweak;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
+import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.client.ClientCommandHandler;
 
 public class CommandTweak extends CommandBase {
@@ -36,9 +37,9 @@ public class CommandTweak extends CommandBase {
 		tweak.toggle();
 		String msg = tweak.getClass().getSimpleName() + " has been ";
 		if(tweak.isEnabled()) {
-			msg += "§aenabled";
+			msg += EnumChatFormatting.GREEN + "enabled";
 		} else {
-			msg += "§cdisabled";
+			msg += EnumChatFormatting.RED + "disabled";
 		}
 		NitroTweaks.info(msg);
 	}

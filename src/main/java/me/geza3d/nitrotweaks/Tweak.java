@@ -1,6 +1,6 @@
-package me.geza3d.compasstweaks;
+package me.geza3d.nitrotweaks;
 
-import me.geza3d.compasstweaks.commands.CommandTweak;
+import me.geza3d.nitrotweaks.commands.CommandTweak;
 import net.minecraftforge.common.MinecraftForge;
 
 public class Tweak {

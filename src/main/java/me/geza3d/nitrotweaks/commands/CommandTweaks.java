@@ -1,9 +1,10 @@
-package me.geza3d.compasstweaks.commands;
+package me.geza3d.nitrotweaks.commands;
 
-import me.geza3d.compasstweaks.NitroTweaks;
-import me.geza3d.compasstweaks.Tweak;
+import me.geza3d.nitrotweaks.NitroTweaks;
+import me.geza3d.nitrotweaks.Tweak;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
+import net.minecraft.util.EnumChatFormatting;
 
 public class CommandTweaks extends BasicCommand {
 
@@ -21,11 +22,11 @@ public class CommandTweaks extends BasicCommand {
 	public void processCommand(ICommandSender sender, String[] args) throws CommandException {
 		String tweaks = "";
 		for(Tweak tweak : NitroTweaks.TWEAKS) {
-			if(!tweaks.isEmpty()) tweaks += "§b, ";
+			if(!tweaks.isEmpty()) tweaks += EnumChatFormatting.DARK_AQUA + ", ";
 			if(tweak.isEnabled()) {
-				tweaks += "§a";
+				tweaks += EnumChatFormatting.GREEN;
 			} else {
-				tweaks += "§c";
+				tweaks += EnumChatFormatting.RED;
 			}
 			tweaks += tweak.getClass().getSimpleName();
 		}

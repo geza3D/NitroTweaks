@@ -1,6 +1,6 @@
-package me.geza3d.compasstweaks.tweaks;
+package me.geza3d.nitrotweaks.tweaks;
 
-import me.geza3d.compasstweaks.Tweak;
+import me.geza3d.nitrotweaks.Tweak;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.client.event.RenderHandEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -33,7 +33,7 @@ public class SneakBackport extends Tweak {
 	}
 	
 	@SubscribeEvent
-	public void onPlayerUpdate(RenderHandEvent e) {
+	public void onRenderUpdate(RenderHandEvent e) {
 		if(mc.thePlayer != null) {
 			if(mc.gameSettings.keyBindSneak.isKeyDown()) {
 				mc.thePlayer.eyeHeight = eyeheightPrev + delta * e.partialTicks;

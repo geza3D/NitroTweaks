@@ -1,16 +1,17 @@
-package me.geza3d.compasstweaks;
+package me.geza3d.nitrotweaks;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import me.geza3d.compasstweaks.commands.CommandTweaks;
-import me.geza3d.compasstweaks.config.Config;
-import me.geza3d.compasstweaks.tweaks.PersistentChat;
-import me.geza3d.compasstweaks.tweaks.SneakBackport;
+import me.geza3d.nitrotweaks.commands.CommandTweaks;
+import me.geza3d.nitrotweaks.config.Config;
+import me.geza3d.nitrotweaks.tweaks.PersistentChat;
+import me.geza3d.nitrotweaks.tweaks.SneakBackport;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -43,6 +44,6 @@ public class NitroTweaks {
 	}
 	
 	public static void info(String info) {
-		Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessageWithOptionalDeletion(new ChatComponentText("§8[§4NitroTweaks§8] §3" + info), CHATLINEID);
+		Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessageWithOptionalDeletion(new ChatComponentText(EnumChatFormatting.DARK_GRAY + "[" + EnumChatFormatting.DARK_RED + "NitroTweaks" + EnumChatFormatting.DARK_GRAY + "] " + EnumChatFormatting.DARK_AQUA + info), CHATLINEID);
 	}
 }
