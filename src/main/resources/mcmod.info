@@ -1,8 +1,8 @@
 [
 {
-  "modid": "sab",
-  "name": "Sneak Animation Backport",
-  "description": "They made me create this for Discord Nitro. Getting underpaid since 1942.",
+  "modid": "nitrotweaks",
+  "name": "NitroTweaks",
+  "description": "It's a Hypixel tweaks mod that adds some useful legit features.",
   "version": "1.0",
   "mcversion": "1.8.9",
   "url": "",

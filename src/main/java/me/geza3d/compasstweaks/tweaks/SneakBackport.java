@@ -1,5 +1,6 @@
-package me.geza3d.sab;
+package me.geza3d.compasstweaks.tweaks;
 
+import me.geza3d.compasstweaks.Tweak;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.client.event.RenderHandEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -7,7 +8,7 @@ import net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent.Phase;
 
-public class SneakOverride {
+public class SneakBackport extends Tweak {
 
 	float defHeight = 1.62F;
 	float noSneakHeight = 1.70F;
